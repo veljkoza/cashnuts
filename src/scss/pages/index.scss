@@ -1,0 +1,92 @@
+.dashboard {
+  display: flex;
+  &__first {
+    width: 27%;
+  }
+  &__second {
+    width: 30%;
+    margin: 0 1rem;
+  }
+  &__third {
+    width: 43%;
+  }
+  &__box {
+    line-height: 1.5rem;
+    margin-top: 1rem;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__right {
+        display: flex;
+        justify-content: space-between;
+      }
+      h3 {
+        font-weight: bold;
+      }
+    }
+    &__body {
+      margin-top: 1.5rem;
+      .photo-input {
+        height: 100%;
+        width: 100%;
+        button {
+          margin: 3rem auto;
+          display: block;
+        }
+      }
+      &__offer {
+        margin: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        p {
+          width: 70%;
+        }
+      }
+
+      .table {
+        &__header {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          padding: 1rem 0;
+          font-weight: bold;
+          border-bottom: 1px solid $gray-light;
+          span {
+            margin-right: 0.2rem;
+            &:nth-child(3) {
+              text-align: center;
+            }
+          }
+        }
+        &__row {
+          padding: 1rem 0;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      .table__row + .table__row {
+        border-top: 1px dashed $gray-light;
+      }
+
+      .checklist{
+          padding: 1rem 0;
+          &__header{
+              display: flex;
+              justify-content: space-between;
+              h3{
+                  color: $black;
+                  font-weight: bold;
+              }
+          }
+          &__body{
+              margin-top: .6rem;
+          }
+          
+      }
+      .checklist+.checklist{
+        border-top: 1px dashed $gray-light;
+    }
+    }
+  }
+}

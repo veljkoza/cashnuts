@@ -1,0 +1,43 @@
+
+/*
+================================================================================
+
+  Grid mixins
+
+================================================================================
+*/
+
+
+
+/* Container
+------------------------------------ */
+
+@mixin container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $pad;
+  padding-right: $pad;
+  max-width: calc(130rem + #{$pad * 2});
+}
+
+
+
+/* Container infinite
+------------------------------------ */
+
+@mixin container-infinite {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $pad;
+  padding-right: $pad;
+}
+
+
+
+/* No shrink
+------------------------------------- */
+
+@mixin no-shrink {
+  flex-shrink: 0;
+  width: 100%;
+}

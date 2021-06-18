@@ -1,0 +1,43 @@
+
+/*
+================================================================================
+
+  General
+
+================================================================================
+*/
+
+:root {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 11px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  @include font-smoothing;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: $black;
+  background-color: $bg-color;
+  font-family: $base-font-stack;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: $gray-dark;
+}
+
+button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
