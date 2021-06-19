@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+
+    <!-- Title -->
+    <title>Agenda | Cashnuts</title>
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,700&display=swap"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+
+  <body>
+    <!-- ==========================
+    HEADER
+  =========================== -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__inner-container">
+          <div class="header__inner-container__left">
+            <!-- Logo -->
+            <a class="header__logo" href="./index.html">
+              <img src="img/sections/images/logo.png" alt="Company logo" />
+            </a>
+
+            <!-- Navigation -->
+            <nav class="nav">
+              <ul class="nav__container">
+                <li class="nav__item">
+                  <a class="nav__link" href="./tasks.html">Opdrachtoverzicht</a>
+                </li>
+
+                <li class="nav__item">
+                  <a class="nav__link active" href="#">Agenda</a>
+                </li>
+
+                <li class="nav__item">
+                  <a class="nav__link" href="./settings.html">Instellingen</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__inner-container__right">
+            <button class="btn btn--xl btn--green">Nieuwe invoer</button
+            ><button class="btn btn--xl btn--red">Uitloggen</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==========================
+    MAIN
+  =========================== -->
+    <main class="page-container">
+        <section class="top-info home-block">
+            <article class="top-info__left">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>
+              <h3 class="top-info__left__title">Tom Niemeljer</h3>
+            </article>
+            <article class="top-info__right">
+              <select name="" id="" class="input">
+                  <option value="">Week 1</option>
+                  <option value="">Week 1</option>
+                  <option value="">Week 1</option>
+                  <option value="">Week 1</option>
+
+              </select>
+            </article>
+          </section>
+          <section class="agenda home-block">
+              <div class="agenda__header">
+                  <h1>Agenda</h1>
+              </div>
+              <div class="agenda__days">
+                  <b>Ma 14 Juni 2021</b>
+                  <b>Di 15 Juni 2021</b>
+                  <b>Wo 16 Juni 2021</b>
+                  <b>Do 17 Juni 2021</b>
+                  <b>Vr 18 Juni 2021</b>
+                  <b>Za 19 Juni 2021</b>
+                  <b>Zo 20 Juni 2021</b>
+
+              </div>
+              <div class="calendar-container">
+                  <div class="calendar-container__hours">
+                    <p>08:00</p>
+                    <p>09:00</p>
+                    <p>10:00</p>
+                    <p>11:00</p>
+                    <p>12:00</p>
+                    <p>13:00</p>
+                    <p>14:00</p>
+                    <p>15:00</p>
+                    <p>16:00</p>
+                    <p>17:00</p>
+
+                  </div>
+                <div class="calendar" id="calendar">
+                    <!-- <div class="item">
+                        <p>08:00 - 09:30</p>
+                        <p>Geert Klaucke</p>
+                    </div> -->
+                    <div class="calendar__row">
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                    </div>
+                    <div class="calendar__row">
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                    </div>
+                    <div class="calendar__row">
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                    </div>
+                    <div class="calendar__row">
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                    </div><div class="calendar__row">
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                    </div>
+                    <div class="calendar__row">
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                    </div><div class="calendar__row">
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                    </div>
+                    <div class="calendar__row">
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                    </div><div class="calendar__row">
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                       <div class="light"></div>
+                    </div>
+                    <div class="calendar__row">
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                       <div class="dark"></div>
+                    </div>
+                 </div>
+              </div>
+          </section>
+    </main>
+
+    <!-- ==========================
+    FOOTER
+  =========================== -->
+
+    <!-- Scripts -->
+    <script
+      src="https://polyfill.io/v3/polyfill.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/runtime.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/vendors.min.js"></script>
+  </body>
+</html>

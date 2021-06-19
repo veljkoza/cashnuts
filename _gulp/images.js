@@ -6,7 +6,6 @@ const gulpif = require("gulp-if");
 const config = require("./_config");
 
 function img() {
-  console.log("img -> config.path.src", config.path.src);
   return src([
     `${config.path.src}/img/**/*`,
     `!${config.path.src}/img/sprites/**`,

@@ -18,10 +18,11 @@ const Modal = (() => {
       });
     });
 
-    closeBtn.addEventListener("click", () => {
-        console.log("test")
-      modal.classList.remove("show");
-    });
+    if (closeBtn) {
+      closeBtn.addEventListener("click", () => {
+        modal.classList.remove("show");
+      });
+    }
   };
 
   const init = function () {

@@ -1,0 +1,62 @@
+.agenda {
+  display: flex;
+  flex-direction: column;
+  &__days {
+    width: 91%;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    margin-bottom: 1rem;
+    justify-items: start;
+    font-size: 0.9rem;
+  }
+  .calendar-container {
+    display: flex;
+    &__hours {
+      width: 9%;
+      display: grid;
+      grid-template-rows: 10;
+      font-size: bold;
+    }
+  }
+
+  .calendar {
+    display: grid;
+    height: 1000px;
+    // background: $gray-dark;
+    // grid-template-columns: 7;
+    grid-template-rows: 10;
+    position: relative;
+    width: 90%;
+    .light,
+    .dark {
+      height: 100px;
+      width: 15%;
+      border-bottom: 2px solid $gray-dark;
+    }
+    .light {
+      background: rgb(223, 220, 220);
+    }
+    .dark {
+      background: rgb(180, 180, 180);
+    }
+    &__row {
+      height: 100px;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .item {
+      position: absolute;
+    //   top: 54px;
+      width: 14%;
+    //   left: 14.3%;
+    //   height: 95px;
+      background: $agenda-item;
+      border-left: 4px solid rgb(18, 114, 18);
+      padding: 0.5rem;
+      font-size: 0.9rem;
+      line-height: 1.4rem;
+    }
+  }
+}
