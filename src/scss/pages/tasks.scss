@@ -1,0 +1,57 @@
+.task-table {
+    background: white;
+    padding: 1rem;
+    width: 100%;
+    &__header {
+      font-size: 1.3rem;
+    }
+    &__labels {
+      display: grid;
+      grid-template-columns: repeat(10, minmax(0, 1fr));
+      padding: 1.2rem 0;
+      border-bottom: 1px solid $gray-light;
+      font-size: .9rem;
+      h3{
+          color: $black;
+      }
+    }
+    &__body {
+      &__item {
+        display: grid;
+        grid-template-columns: repeat(10, minmax(0, 1fr));
+        padding: 2rem 0;
+        &+&{
+          border-top: 1px dashed $gray-light;
+        }
+      }
+    }
+    .status {
+      color: white;
+      border-radius: 6px;
+      padding: 0.5rem;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1rem;
+      font-size: .85rem;
+      &--blue {
+        background: $blue;
+      }
+      &--orange {
+        background: $orange;
+      }
+      &--green {
+        background: $green;
+      }
+      &--yellow {
+        background: $yellow;
+      }
+    }
+  }
+  .text-center{
+      text-align: center;
+  }
+  .ml-1{
+      margin-left: 1rem;
+  }

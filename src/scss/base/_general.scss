@@ -36,6 +36,12 @@ h1,h2,h3,h4,h5,h6{
   color: $gray-dark;
 }
 
+select:invalid,
+select option[value=""] {
+  color: $gray-light;
+}
+
+
 button{
   background: none;
   border: none;

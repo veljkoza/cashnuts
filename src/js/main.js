@@ -9,13 +9,13 @@
 
 import AOSAnimations from './components/aos';
 import Header from './components/header';
-import Hero from './sections/hero';
+import Modal from './components/modal';
 import Navigation from './components/navigation';
 import Program from './sections/program';
 
-
-AOSAnimations.init();
+Modal.init();
+// AOSAnimations.init();
 // Header.init();
-Hero.init();
-Navigation.init();
-Program.init();
+// Hero.init();
+// Navigation.init();
+// Program.init();

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+
+    <!-- Title -->
+    <title>Tasks | Cashnuts</title>
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,700&display=swap"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+
+  <body>
+    <!-- ==========================
+    HEADER
+  =========================== -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__inner-container">
+          <div class="header__inner-container__left">
+            <!-- Logo -->
+            <a class="header__logo" href="./index.html">
+              <img src="img/sections/images/logo.png" alt="Company logo" />
+            </a>
+
+            <!-- Navigation -->
+            <nav class="nav">
+              <ul class="nav__container">
+                <li class="nav__item">
+                  <a class="nav__link active" href="#">Opdrachtoverzicht</a>
+                </li>
+
+                <li class="nav__item">
+                  <a class="nav__link" href="./agenda.html">Agenda</a>
+                </li>
+
+                <li class="nav__item">
+                  <a class="nav__link" href="./settings.html">Instellingen</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__inner-container__right">
+            <button class="btn btn--xl btn--green">Nieuwe invoer</button
+            ><button class="btn btn--xl btn--red">Uitloggen</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==========================
+    MAIN
+  =========================== -->
+    <main class="page-container">
+      <section class="top-info home-block">
+        <article class="top-info__left">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M463.952 0H48.057C5.419 0-16.094 51.731 14.116 81.941L176 243.882V416c0 15.108 7.113 29.335 19.2 40l64 47.066c31.273 21.855 76.8 1.538 76.8-38.4V243.882L497.893 81.941C528.042 51.792 506.675 0 463.952 0zM288 224v240l-64-48V224L48 48h416L288 224z"
+            />
+          </svg>
+          <h3 class="top-info__left__title">Filters</h3>
+        </article>
+        <article class="top-info__right">
+          <select name="select-1" id="select-1" class="input">
+            <option value="test" selected disabled>Alle adviseurs</option>
+            <option value="test">Alle adviseurs</option>
+            <option value="test">Alle adviseurs</option>
+            <option value="test">Alle adviseurs</option>
+          </select>
+          <select name="select-2" id="select-2" class="input">
+            <option value="test" selected disabled>Laatste bovenaan</option>
+            <option value="test">Laatste bovenaan</option>
+            <option value="test">Laatste bovenaan</option>
+            <option value="test">Laatste bovenaan</option>
+          </select>
+          <select name="select-3" id="select-3" class="input">
+            <option value="test" selected disabled>Laatste 30 dagen</option>
+            <option value="test">Laatste 30 dagen</option>
+            <option value="test">Laatste 30 dagen</option>
+            <option value="test">Laatste 30 dagen</option>
+          </select>
+          <div class="input input--icon">
+            <input type="text" placeholder="Zoeken…"/>
+            <img src="./img/icons/search.svg" alt="Search icon">
+          </div>
+        </article>
+      </section>
+     
+      <section class="task-table home-block">
+        <div class="task-table__header">
+          <h1>Opdrachtoverzicht</h1>
+        </div>
+        <div class="task-table__labels">
+          <h3>Nummer</h3>
+          <h3>Soort</h3>
+          <h3>Klant</h3>
+          <h3 class="text-center">Actie</h3>
+          <h3 class="text-center">Lead</h3>
+          <h3>Status</h3>
+          <h3>Offertedatum</h3>
+          <h3 class="text-center ml-1">Week</h3>
+          <h3>Adviseur</h3>
+          <h3>Ingevoerd</h3>
+        </div>
+        <div class="task-table__body">
+          <article class="task-table__body__item" >
+            <span>2106031348</span>
+            <span>ISO</span>
+            <div>
+              <p>ISO</p>
+              <p>9561 AS Ter Apel, Kloosterveenweg 92</p>
+            </div>
+            <span class="text-center">Lorem</span>
+            <span class="text-center">5A</span>
+            <div class="status status--yellow" ><span>AANMELDING</span></div>
+            <span> Ma 7 Jun 2021 </span>
+            <span class="text-center"> 2021 22</span>
+            <span> Tom Niemeijer </span>
+            <span> Ma 7 Jun 2021 </span>
+          </article>
+          <article class="task-table__body__item" >
+            <span>2106031348</span>
+            <span>ISO</span>
+            <div>
+              <p>ISO</p>
+              <p>9561 AS Ter Apel, Kloosterveenweg 92</p>
+            </div>
+            <span class="text-center">Lorem</span>
+            <span class="text-center">5A</span>
+            <div class="status status--blue" ><span>OFFERTE</span></div>
+            <span> Ma 7 Jun 2021 </span>
+            <span class="text-center"> 2021 22</span>
+            <span> Tom Niemeijer </span>
+            <span> Ma 7 Jun 2021 </span>
+          </article>
+          <article class="task-table__body__item" >
+            <span>2106031348</span>
+            <span>ISO</span>
+            <div>
+              <p>ISO</p>
+              <p>9561 AS Ter Apel, Kloosterveenweg 92</p>
+            </div>
+            <span class="text-center">Lorem</span>
+            <span class="text-center">5A</span>
+            <div class="status status--orange" ><span>ANNULERING</span></div>
+            <span> Ma 7 Jun 2021 </span>
+            <span class="text-center"> 2021 22</span>
+            <span> Tom Niemeijer </span>
+            <span> Ma 7 Jun 2021 </span>
+          </article>
+          <article class="task-table__body__item" >
+            <span>2106031348</span>
+            <span>ISO</span>
+            <div>
+              <p>ISO</p>
+              <p>9561 AS Ter Apel, Kloosterveenweg 92</p>
+            </div>
+            <span class="text-center">Lorem</span>
+            <span class="text-center">5A</span>
+            <div class="status status--green" ><span>OPDRACHT</span></div>
+            <span> Ma 7 Jun 2021 </span>
+            <span class="text-center"> 2021 22</span>
+            <span> Tom Niemeijer </span>
+            <span> Ma 7 Jun 2021 </span>
+          </article>
+          <article class="task-table__body__item" >
+            <span>2106031348</span>
+            <span>ISO</span>
+            <div>
+              <p>ISO</p>
+              <p>9561 AS Ter Apel, Kloosterveenweg 92</p>
+            </div>
+            <span class="text-center">Lorem</span>
+            <span class="text-center">5A</span>
+            <div class="status status--yellow" ><span>AANMELDING</span></div>
+            <span> Ma 7 Jun 2021 </span>
+            <span class="text-center"> 2021 22</span>
+            <span> Tom Niemeijer </span>
+            <span> Ma 7 Jun 2021 </span>
+          </article>
+          <article class="task-table__body__item" >
+            <span>2106031348</span>
+            <span>ISO</span>
+            <div>
+              <p>ISO</p>
+              <p>9561 AS Ter Apel, Kloosterveenweg 92</p>
+            </div>
+            <span class="text-center">Lorem</span>
+            <span class="text-center">5A</span>
+            <div class="status status--yellow" ><span>AANMELDING</span></div>
+            <span> Ma 7 Jun 2021 </span>
+            <span class="text-center"> 2021 22</span>
+            <span> Tom Niemeijer </span>
+            <span> Ma 7 Jun 2021 </span>
+          </article>
+          <article class="task-table__body__item" >
+            <span>2106031348</span>
+            <span>ISO</span>
+            <div>
+              <p>ISO</p>
+              <p>9561 AS Ter Apel, Kloosterveenweg 92</p>
+            </div>
+            <span class="text-center">Lorem</span>
+            <span class="text-center">5A</span>
+            <div class="status status--yellow" ><span>AANMELDING</span></div>
+            <span> Ma 7 Jun 2021 </span>
+            <span class="text-center"> 2021 22</span>
+            <span> Tom Niemeijer </span>
+            <span> Ma 7 Jun 2021 </span>
+          </article>
+          <article class="task-table__body__item" >
+            <span>2106031348</span>
+            <span>ISO</span>
+            <div>
+              <p>ISO</p>
+              <p>9561 AS Ter Apel, Kloosterveenweg 92</p>
+            </div>
+            <span class="text-center">Lorem</span>
+            <span class="text-center">5A</span>
+            <div class="status status--yellow" ><span>AANMELDING</span></div>
+            <span> Ma 7 Jun 2021 </span>
+            <span class="text-center"> 2021 22</span>
+            <span> Tom Niemeijer </span>
+            <span> Ma 7 Jun 2021 </span>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================
+    FOOTER
+  =========================== -->
+
+    <!-- Scripts -->
+    <script
+      src="https://polyfill.io/v3/polyfill.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/runtime.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/vendors.min.js"></script>
+  </body>
+</html>

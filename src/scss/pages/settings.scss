@@ -1,0 +1,32 @@
+.table {
+    background: white;
+    padding: 1rem;
+    width: 100%;
+    &__header {
+    //   font-size: 1.3rem;
+    }
+    &__labels {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      padding: 1.2rem 0;
+      h3{
+        color: $black;
+      }
+      border-bottom: 1px solid $gray-light;
+    }
+    &__body {
+      &__item {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        padding: 2rem 0;
+        & + & {
+          border-top: 1px dashed $gray-light;
+        }
+      }
+    }
+  }
+
+  .self-end{
+      justify-self: end;
+  }

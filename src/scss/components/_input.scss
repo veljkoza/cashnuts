@@ -1,0 +1,23 @@
+.input {
+  border: 1px solid $gray-dark;
+  position: relative;
+ 
+  &--icon {
+    input {
+      padding-right: 2rem !important;
+    }
+  }
+  input {
+    height: 100%;
+    padding: .3rem;
+    width: 100%;
+    border: none;
+  }
+  img {
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    height: 15px;
+    width: 15px;
+  }
+}
