@@ -35,21 +35,26 @@ const Agenda = (() => {
       },
     },
     {
-        title: "Another meeting",
-        day: 1,
-        start: {
-          hour: 15,
-          minute: 15,
-        },
-        end: {
-          hour: 16,
-          minute: 10,
-        },
+      title: "Another meeting",
+      day: 1,
+      start: {
+        hour: 15,
+        minute: 15,
       },
+      end: {
+        hour: 16,
+        minute: 10,
+      },
+    },
   ];
-  //100px = 1hour
+
+  //function that returns double digits 9 -> 09
+  function doubleDigits(n) {
+    return n > 9 ? "" + n : "0" + n;
+  }
+  //work day is 1000px (10 hours)
   const workDay = 1000;
-  //1.6px = 1min
+  //100px = 1hour
   const hour = 100;
   //1 minute = 1.6px
   const minute = 1.6;
@@ -59,14 +64,12 @@ const Agenda = (() => {
   const day = 14.3;
   const addItem = (item) => {
     let startH = Math.abs(workhours - item.start.hour) * hour;
+
+    //if 'meeting' start time is greater than work time (10) add + 2hours to absolute division
     if (item.start.hour > workhours) {
       startH = (Math.abs(workhours - item.start.hour) + 2) * hour;
     }
-    console.log("addItem -> startH", startH);
     let startM = item.start.minute * minute;
-    function doubleDigits(n) {
-      return n > 9 ? "" + n : "0" + n;
-    }
 
     let topPosition = startH + startM;
     let duration =
@@ -83,12 +86,20 @@ const Agenda = (() => {
 
     let left = item.day * day;
 
+    // meeting start (absolute top position)
     render.style.top = `${topPosition}px`;
+    //meeting duration (height of an element)
     render.style.height = `${duration}px`;
+    //meeting day (absolute left position)
     render.style.left = `${left}%`;
 
-    console.log(render);
-    calendar.appendChild(render);
+    //for now go to index on click of 'meeting'
+    render.addEventListener("click", () => {
+      document.location.href = "./index.html";
+    });
+    if (calendar) {
+      calendar.appendChild(render);
+    }
   };
 
   const addItemsToAgend = function () {

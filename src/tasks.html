@@ -63,7 +63,7 @@
     MAIN
   =========================== -->
     <main class="page-container">
-      <section class="top-info home-block">
+      <section class="top-info top-info--stretched home-block">
         <article class="top-info__left">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path
@@ -72,7 +72,7 @@
           </svg>
           <h3 class="top-info__left__title">Filters</h3>
         </article>
-        <article class="top-info__right">
+        <!-- <article class="top-info__right"> -->
           <select name="select-1" id="select-1" class="input">
             <option value="test" selected disabled>Alle adviseurs</option>
             <option value="test">Alle adviseurs</option>
@@ -95,7 +95,10 @@
             <input type="text" placeholder="Zoeken…"/>
             <img src="./img/icons/search.svg" alt="Search icon">
           </div>
-        </article>
+          <div class="btn">
+            Filter
+          </div>
+        <!-- </article> -->
       </section>
      
       <section class="task-table home-block">
@@ -239,9 +242,131 @@
       </section>
     </main>
 
-    <!-- ==========================
-    FOOTER
-  =========================== -->
+    <!-- MODAL COMPONENT -->
+    <div class="modal" id="modal">
+      <div class="modal__blur"></div>
+      <article class="modal__body">
+        <form>
+          <header lass="modal__body__header"><h1>Nieuwe invoer</h1></header>
+          <div class="modal__body__input-line">
+            <label for="select-1">Offerte voor isolatie of zonnepanelen </label>
+            <select name="select-1" id="select-1">
+              <option value="" selected disabled>Maak een keuze</option>
+              <option value="2">Maak een keuze</option>
+              <option value="3">Maak een keuze</option>
+            </select>
+          </div>
+          <h3 lass="modal__body__subtitle">Gegevens aanvrager</h3>
+          <div class="modal__body__input-line">
+            <label for="select-1">Offerte voor isolatie of zonnepanelen </label>
+            <select name="select-1" id="select-1">
+              <option value="" selected disabled>Maak een keuze</option>
+              <option value="2">Maak een keuze</option>
+              <option value="3">Maak een keuze</option>
+            </select>
+          </div>
+          <div class="modal__body__input-line">
+            <label for="select-1">De heer / Mevrouw</label>
+            <select name="select-1" id="select-1">
+              <option value="" selected disabled>Maak een keuze</option>
+              <option value="2">Maak een keuze</option>
+              <option value="3">Maak een keuze</option>
+            </select>
+          </div>
+          <div class="modal__body__input-line">
+            <input type="text" placeholder="Voornaam of letters" />
+            <input type="text" placeholder="Achternaam	" />
+          </div>
+          <div class="modal__body__input-line modal__body__input-line--full">
+            <input type="email" placeholder="E-mailadres" />
+          </div>
+          <div class="modal__body__input-line modal__body__input-line--full">
+            <input type="email" placeholder="CC e-mailadres" />
+          </div>
+          <div class="modal__body__input-line">
+            <input type="text" placeholder="Telefoon 1" />
+            <input type="text" placeholder="Telefoon 2" />
+          </div>
+          <h3 lass="modal__body__subtitle">Bezoekadres</h3>
+          <div
+            class="modal__body__input-line modal__body__input-line--left-small"
+          >
+            <input type="email" placeholder="Postcode" />
+            <input type="email" placeholder="Woonplaats" />
+          </div>
+          <div
+            class="modal__body__input-line modal__body__input-line--right-small"
+          >
+            <input type="email" placeholder="Straat" />
+            <input type="email" placeholder="Huisnummer" />
+          </div>
+          <h3 lass="modal__body__subtitle">Planning adviesgesprek</h3>
+          <div class="modal__body__input-line">
+            <label for="select-1">De heer / Mevrouw</label>
+            <select name="select-1" id="select-1">
+              <option value="" selected disabled>
+                Tom Niemeijer - Adviseur Particuliere markt
+              </option>
+              <option value="2">
+                Tom Niemeijer - Adviseur Particuliere markt
+              </option>
+              <option value="3">
+                Tom Niemeijer - Adviseur Particuliere markt
+              </option>
+            </select>
+          </div>
+          <div class="modal__body__input-line">
+            <label for="select-1">Planning</label>
+            <div class="modal__body__input-line__right">
+              <select name="select-1" id="select-1">
+                <option value="" selected disabled>Niet ingepland</option>
+                <option value="2">Niet ingepland</option>
+                <option value="2">Niet ingepland</option>
+              </select>
+              <span>om</span>
+              <select name="select-1" id="select-1">
+                <option value="" selected disabled>-</option>
+                <option value="2">-</option>
+                <option value="2">-</option>
+              </select>
+              <select name="select-1" id="select-1">
+                <option value="" selected disabled>00</option>
+                <option value="2">01</option>
+                <option value="2">02</option>
+              </select>
+              <span>Duur</span>
+              <select name="select-1" id="select-1">
+                <option value="" selected disabled>01:00</option>
+                <option value="2">01:00</option>
+                <option value="2">02:00</option>
+              </select>
+            </div>
+          </div>
+          <h3 lass="modal__body__subtitle">Opmerkingen</h3>
+          <textarea
+            name="textarea"
+            id="textarea"
+            placeholder="Opmerkingen"
+          ></textarea>
+          <div class="modal__body__actions">
+            <div class="modal__body__actions__left">
+          <button class="btn">Overige afspraak …</button>
+
+            </div>
+            <div class="modal__body__actions__right">
+              <button class="btn btn--yellow">Werverk</button>
+              <button class="btn btn--green">Opslaan</button>
+              <button class="btn btn--red" id="close-modal">Annuleren</button>
+    
+                </div>
+          </div>
+        </form>
+        <!-- <button class="modal__body__close" id="close-modal">
+          <span>x</span>
+        </button> -->
+      </article>
+    </div>
+
 
     <!-- Scripts -->
     <script
