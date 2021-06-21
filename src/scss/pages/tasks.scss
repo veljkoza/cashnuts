@@ -17,6 +17,10 @@
     }
     &__body {
       &__item {
+        cursor: pointer;
+        &:hover{
+          background: $gray-light;
+        }
         display: grid;
         grid-template-columns: repeat(10, minmax(0, 1fr));
         padding: 2rem 0;

@@ -1,37 +1,47 @@
-
-
 .top-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  & + & {
+    margin-top: 1rem;
+  }
+  &__left {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: .5rem 0;
-    &+&{
-        margin-top: 1rem;
+    h3 {
+      color: $black;
     }
-    &__left {
-      display: flex;
-      align-items: center;
-      h3{
-          color: $black;
-      }
-      svg {
-        height: 15px;
-        width: auto;
-        object-fit: contain;
-        fill: $black;
-      }
-      &__title {
-        margin: 0 0.5rem;
-      }
+    svg {
+      height: 15px;
+      width: auto;
+      object-fit: contain;
+      fill: $black;
     }
-    &__right {
-      display: flex;
-      .btn {
-        margin: 0 0.2rem;
-      }
-    }
-
-    .input + .input{
-      margin-left: .5rem;
+    &__title {
+      margin: 0 0.5rem;
     }
   }
+  &__right {
+    display: flex;
+    .btn {
+      margin: 0 0.2rem;
+    }
+  }
+  &--stretched {
+    select {
+      width: 22%;
+    }
+    .input--icon {
+      width: 34%;
+      margin: 0 0.2rem;
+    }
+  }
+  .input {
+    height: 30px;
+  }
+
+  .input + .input {
+    margin-left: 0.5rem;
+  }
+}

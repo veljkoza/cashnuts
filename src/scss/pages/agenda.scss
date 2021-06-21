@@ -32,13 +32,13 @@
     .dark {
       height: 100px;
       width: 15%;
-      border-bottom: 2px solid $gray-dark;
+      border-bottom: 2px solid $gray-light;
     }
     .light {
-      background: rgb(223, 220, 220);
+      background: #f2f2f2;
     }
     .dark {
-      background: rgb(180, 180, 180);
+      background: #e5e5e5;
     }
     &__row {
       height: 100px;
@@ -48,15 +48,20 @@
 
     .item {
       position: absolute;
-    //   top: 54px;
+      //   top: 54px;
       width: 14%;
-    //   left: 14.3%;
-    //   height: 95px;
-      background: $agenda-item;
-      border-left: 4px solid rgb(18, 114, 18);
+      //   left: 14.3%;
+      //   height: 95px;
+      background: rgba($agenda-item, 0.4);
+      border-left: 4px solid $agenda-item;
       padding: 0.5rem;
       font-size: 0.9rem;
       line-height: 1.4rem;
+      cursor: pointer;
+      transition: ease-in all .1s;
+      &:hover{
+        background: $agenda-item;
+      }
     }
   }
 }
